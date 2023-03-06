@@ -46,5 +46,8 @@ int main() {
     cout << a.first << "  "<< a.second << endl;
     pair<string, int> b("lh", 1);
     cout << b.first << "  "<< b.second << endl;
+    vector<pair<string, int>> pm;
+    pm.push_back(a);
+    pm.push_back(b);
 
 }
