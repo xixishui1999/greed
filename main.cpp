@@ -26,19 +26,25 @@
 using namespace std;
 
 int main() {
-    vector<string> words = {"apple", "banana", "orange", "apple", "pear", "orange"};
-    map<string, int> m; // 使用map
-    unordered_map<string, int> um; // 使用unordered_map
-    for (auto word : words) {
-        m[word]++; // map会自动按照键值升序排序
-        um[word]++; // unordered_map不会排序
-    }
-    cout << "Using map:" << endl;
-    for (auto p : m) {
-        cout << p.first << ": " << p.second << endl;
-    }
-    cout << "Using unordered_map:" << endl;
-    for (auto p : um) {
-        cout << p.first << ": " << p.second << endl;
-    }
+    // vector<string> words = {"apple", "banana", "orange", "apple", "pear", "orange"};
+    // map<string, int> m; // 使用map
+    // unordered_map<string, int> um; // 使用unordered_map
+    // for (auto word : words) {
+    //     m[word]++; // map会自动按照键值升序排序
+    //     um[word]++; // unordered_map不会排序
+    // }
+    // cout << "Using map:" << endl;
+    // for (auto p : m) {
+    //     cout << p.first << ": " << p.second << endl;
+    // }
+    // cout << "Using unordered_map:" << endl;
+    // for (auto p : um) {
+    //     cout << p.first << ": " << p.second << endl;
+    // }
+    /*-----------------pair-----------------*/  
+    pair<string, int> a = make_pair("zj", 3);
+    cout << a.first << "  "<< a.second << endl;
+    pair<string, int> b("lh", 1);
+    cout << b.first << "  "<< b.second << endl;
+
 }
